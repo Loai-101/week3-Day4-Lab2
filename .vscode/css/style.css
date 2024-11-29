@@ -1,0 +1,141 @@
+body {
+  margin: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/736x/56/20/fd/5620fda2ca837927e8d5525b528f6dd3.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.currentPlayer {
+  color: black;
+  margin: 0;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  border-color: rgb(243, 238, 238);
+  padding: 10px;
+  background-color: rgb(110, 18, 172);
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 48px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(245, 237, 237);
+  border-radius: 15px;
+  border: 3px solid rgb(247, 240, 240);
+  background-color: rgb(156, 11, 69);
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+#statusText {
+  border: 3px solid rgb(247, 240, 240);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(156, 11, 69);
+  margin: 10px;
+}
+
+
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
+  margin-bottom: 20px;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid black;
+  font-size: 64px;
+  text-align: center;
+  line-height: 100px; /* Center text vertically */
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+/* this i learned from google */
+.sqr:hover {
+  background-color: rgba(255, 255, 0, 0.5); /* Light yellow on hover */
+}
+
+#statusText {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+#playerContainer {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  margin: 5px;
+}
+
+#playerContainer button { 
+  font-size: 20px;
+  margin: 10px;               
+  font-weight: bold;
+  border: 3px solid rgb(244, 242, 242);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(110, 18, 172);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+}
+/* this i learned from google */
+#playerContainer button:hover {
+  background-color: lightgray; 
+}
+
+
+
+.scoreContainer{
+  font-size: 15px;
+  margin: 5px;               
+  font-weight: bold;
+  border: 3px solid rgb(244, 242, 242);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(110, 18, 172);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+}
+
+
+#restartButton {
+  font-size: 20px;
+  margin-top: 0px;
+  padding: 10px 20px;
+  border: 2px solid rgb(247, 240, 240);
+  background-color: rgb(110, 18, 172);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: black;
+}
+/* this i learned from google */
+#restartButton:hover {
+  background-color: rgba(255, 0, 0, 0.5); /* Light red on hover */
+  transform: scale(1.05); 
+}
